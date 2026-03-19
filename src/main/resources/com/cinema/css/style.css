@@ -1,0 +1,286 @@
+/* ===================================================
+   CINEMA APP — Global Stylesheet
+   =================================================== */
+
+/* Root variables */
+.root {
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-font-size: 13px;
+    -primary: #141450;
+    -accent:  #C81E1E;
+    -light:   #F5F5F5;
+    -border:  #D0D0E0;
+}
+
+/* ---- Auth Screen ---------------------------------------- */
+.auth-root {
+    -fx-background-color: linear-gradient(to bottom right, #141450, #2d2d80);
+}
+.auth-card {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.35), 24, 0, 0, 8);
+    -fx-padding: 36 40 36 40;
+}
+.auth-title {
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #141450;
+}
+.auth-subtitle {
+    -fx-font-size: 13px;
+    -fx-text-fill: #888;
+}
+.auth-field {
+    -fx-pref-height: 38px;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+    -fx-border-color: #D0D0E0;
+    -fx-border-width: 1;
+    -fx-padding: 0 10;
+}
+.auth-field:focused {
+    -fx-border-color: #141450;
+}
+.btn-primary {
+    -fx-background-color: #141450;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6;
+    -fx-pref-height: 38px;
+    -fx-cursor: hand;
+}
+.btn-primary:hover {
+    -fx-background-color: #2d2d80;
+}
+.btn-danger {
+    -fx-background-color: #C81E1E;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+}
+.btn-danger:hover {
+    -fx-background-color: #a01515;
+}
+.btn-secondary {
+    -fx-background-color: #e8e8f0;
+    -fx-text-fill: #333;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+}
+.btn-secondary:hover {
+    -fx-background-color: #d0d0e0;
+}
+.link-label {
+    -fx-text-fill: #141450;
+    -fx-underline: true;
+    -fx-cursor: hand;
+}
+
+/* ---- Sidebar -------------------------------------------- */
+.sidebar {
+    -fx-background-color: #141450;
+    -fx-pref-width: 220px;
+    -fx-min-width: 220px;
+}
+.sidebar-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-padding: 24 20 8 20;
+}
+.sidebar-subtitle {
+    -fx-font-size: 11px;
+    -fx-text-fill: #9999cc;
+    -fx-padding: 0 20 20 20;
+}
+.nav-btn {
+    -fx-background-color: transparent;
+    -fx-text-fill: #ccccee;
+    -fx-alignment: CENTER-LEFT;
+    -fx-pref-width: 200px;
+    -fx-pref-height: 40px;
+    -fx-background-radius: 6;
+    -fx-padding: 0 0 0 16;
+    -fx-cursor: hand;
+    -fx-font-size: 13px;
+}
+.nav-btn:hover {
+    -fx-background-color: rgba(255,255,255,0.1);
+    -fx-text-fill: white;
+}
+.nav-btn-active {
+    -fx-background-color: rgba(200, 30, 30, 0.85);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+.sidebar-logout {
+    -fx-background-color: transparent;
+    -fx-text-fill: #ff8888;
+    -fx-alignment: CENTER-LEFT;
+    -fx-pref-width: 200px;
+    -fx-pref-height: 40px;
+    -fx-background-radius: 6;
+    -fx-padding: 0 0 0 16;
+    -fx-cursor: hand;
+    -fx-font-size: 13px;
+}
+.sidebar-logout:hover {
+    -fx-background-color: rgba(200, 30, 30, 0.3);
+}
+
+/* ---- Content area --------------------------------------- */
+.content-root {
+    -fx-background-color: #F5F5F5;
+}
+.page-title {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #141450;
+    -fx-padding: 24 0 4 0;
+}
+.page-subtitle {
+    -fx-font-size: 12px;
+    -fx-text-fill: #888;
+    -fx-padding: 0 0 16 0;
+}
+.card {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.07), 10, 0, 0, 3);
+    -fx-padding: 20;
+}
+.section-title {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #141450;
+    -fx-padding: 0 0 10 0;
+}
+.filter-bar {
+    -fx-background-color: white;
+    -fx-background-radius: 8;
+    -fx-padding: 12 16;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 6, 0, 0, 2);
+}
+.form-label {
+    -fx-font-weight: bold;
+    -fx-text-fill: #444;
+    -fx-font-size: 12px;
+}
+.form-field {
+    -fx-pref-height: 34px;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: #D0D0E0;
+    -fx-border-width: 1;
+}
+.form-field:focused {
+    -fx-border-color: #141450;
+}
+
+/* ---- Tables --------------------------------------------- */
+.table-view {
+    -fx-background-color: white;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+}
+.table-view .column-header {
+    -fx-background-color: #141450;
+}
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+}
+.table-row-cell:odd {
+    -fx-background-color: #f8f8fc;
+}
+.table-row-cell:selected {
+    -fx-background-color: #dde0f5;
+}
+
+/* ---- Seat Map ------------------------------------------- */
+.seat-disponible {
+    -fx-background-color: #4CAF50;
+    -fx-background-radius: 5;
+    -fx-text-fill: white;
+    -fx-font-size: 10px;
+    -fx-cursor: hand;
+    -fx-min-width: 32px;
+    -fx-min-height: 28px;
+    -fx-pref-width: 32px;
+    -fx-pref-height: 28px;
+}
+.seat-disponible:hover {
+    -fx-background-color: #388E3C;
+}
+.seat-reserve {
+    -fx-background-color: #F44336;
+    -fx-background-radius: 5;
+    -fx-text-fill: white;
+    -fx-font-size: 10px;
+    -fx-min-width: 32px;
+    -fx-min-height: 28px;
+    -fx-pref-width: 32px;
+    -fx-pref-height: 28px;
+}
+.seat-selected {
+    -fx-background-color: #2196F3;
+    -fx-background-radius: 5;
+    -fx-text-fill: white;
+    -fx-font-size: 10px;
+    -fx-cursor: hand;
+    -fx-min-width: 32px;
+    -fx-min-height: 28px;
+    -fx-pref-width: 32px;
+    -fx-pref-height: 28px;
+    -fx-border-color: #0d47a1;
+    -fx-border-radius: 5;
+    -fx-border-width: 2;
+}
+.seat-vip {
+    -fx-background-color: #FF9800;
+}
+.seat-vip:hover {
+    -fx-background-color: #F57C00;
+}
+
+/* ---- Status badges -------------------------------------- */
+.badge-confirmee {
+    -fx-background-color: #E8F5E9;
+    -fx-text-fill: #2E7D32;
+    -fx-background-radius: 20;
+    -fx-padding: 2 10;
+    -fx-font-weight: bold;
+    -fx-font-size: 11px;
+}
+.badge-attente {
+    -fx-background-color: #FFF8E1;
+    -fx-text-fill: #F57F17;
+    -fx-background-radius: 20;
+    -fx-padding: 2 10;
+    -fx-font-weight: bold;
+    -fx-font-size: 11px;
+}
+.badge-annulee {
+    -fx-background-color: #FFEBEE;
+    -fx-text-fill: #C62828;
+    -fx-background-radius: 20;
+    -fx-padding: 2 10;
+    -fx-font-weight: bold;
+    -fx-font-size: 11px;
+}
+
+/* ---- Misc ---------------------------------------------- */
+.separator {
+    -fx-background-color: #E0E0E0;
+}
+.error-label {
+    -fx-text-fill: #C81E1E;
+    -fx-font-size: 11px;
+}
+.info-label {
+    -fx-text-fill: #555;
+    -fx-font-size: 12px;
+}
