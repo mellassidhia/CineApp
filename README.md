@@ -140,9 +140,3 @@ iText 5 is included via Maven — no extra setup needed.
 - **Role-based routing** — Admin sees management panels; users see booking interface
 
 ---
-
-## 📝 Notes for your teammate
-
-Modules **6 (Statistics Dashboard)** and **7 (Recommendations)** are intentionally left out — 
-the DAOs and models are all in place, so they just need to add new controllers and register 
-them in `ViewManager` and `SidebarController`.
