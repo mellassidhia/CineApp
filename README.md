@@ -7,10 +7,10 @@ A full-featured JavaFX desktop application for cinema management with role-based
 ## 📋 Features
 
 ### Admin
-- **Films** — Add, edit, delete (protected: no delete if future seances exist), filter by genre
-- **Salles** — Add, edit, delete (protected), manage individual seats per hall
-- **Séances** — Schedule screenings with conflict detection, edit/delete restrictions
-- **Clients** — View all clients, edit their info, consult reservation history
+- **Films** : Add, edit, delete (protected: no delete if future seances exist), filter by genre
+- **Salles** : Add, edit, delete (protected), manage individual seats per hall
+- **Séances** : Schedule screenings with conflict detection, edit/delete restrictions
+- **Clients** : View all clients, edit their info, consult reservation history
 
 ### User (Client)
 - **Browse movies** — Filter by genre, view descriptions
